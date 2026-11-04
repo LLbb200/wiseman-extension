@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 320px; font-family: sans-serif; padding: 10px; margin: 0; }
+    h2 { font-size: 14px; margin: 0 0 8px 0; display: flex; justify-content: space-between; align-items: center; }
+    .status { font-size: 11px; color: #666; }
+    .status.active { color: #0a0; font-weight: bold; }
+    .controls { display: flex; gap: 5px; margin-bottom: 8px; }
+    button { padding: 4px 8px; cursor: pointer; font-size: 12px; }
+    button.active { background: #000; color: #fff; }
+    #question-list { max-height: 280px; overflow-y: auto; border: 1px solid #ccc; padding: 5px; }
+    .q-item { padding: 6px; margin-bottom: 4px; border-bottom: 1px solid #eee; cursor: pointer; }
+    .q-item:hover { background: #f0f0f0; }
+    .q-prompt { font-size: 11px; font-weight: bold; }
+    .q-ans { font-size: 10px; color: #080; margin-top: 2px; }
+  </style>
+</head>
+<body>
+  <h2>
+    <span>Wiseman Thing</span>
+    <span id="db-status" class="status">Waiting...</span>
+  </h2>
+
+  <div class="controls">
+    <button class="mode-btn active" data-mode="Easy">easy</button>
+    <button class="mode-btn" data-mode="Challenging">challenging</button>
+    <button id="reset-btn" style="margin-left: auto;">Rescan</button>
+  </div>
+
+  <p>
+    If nothing shows or the questions are wrong, press rescan and refresh the page. <br></br>
+    <b>THE QUESTIONS ARE NOT IN ORDER</b><br>
+    Press to autofill (beta and risky - do it manually if you can)
+  </p>
+
+  <div id="question-list">
+    <div style="font-size: 11px; color: #666; padding: 10px; text-align: center;">Refresh the course page to capture XML data.</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

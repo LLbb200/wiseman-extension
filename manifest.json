@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Wiseman Bypass v2",
+  "version": "2.0",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

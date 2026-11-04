@@ -10,7 +10,7 @@ Requirements:
 - Internet connection
 - Some braincells
 
-1. Download the extension [here](https://github.com)
+1. Download the extension folder [here](https://github.com/LLbb200/wiseman-extension/archive/refs/heads/main.zip)
 2. Go to `chrome://extensions/` (Paste it in your url bar..)
 3. Toggle 'Developer mode' in the top right corner in the page
 4. Press 'Load Unpacked' (Top left corner)
